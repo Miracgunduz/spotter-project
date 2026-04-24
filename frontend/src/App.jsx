@@ -25,7 +25,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      let res = await fetch('http://127.0.0.1:8000/api/calculate-route/', {
+      let res = await fetch('https://spotter-project-b2z4.onrender.com/api/calculate-route/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
